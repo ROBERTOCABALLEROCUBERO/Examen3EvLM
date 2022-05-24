@@ -12,13 +12,13 @@ xsi:schemaLocation="https://www.w3schools.com tiempo.xsd">
                     <Fecha>2013-12-23</Fecha>
                     <Temperatura_maxima>25.5</Temperatura_maxima>
                     <Temperatura_minima>13.6</Temperatura_minima>
-                    <Prob_Lluvia>26.0</Prob_Lluvia>
+                    <Prob_Lluvia>26%</Prob_Lluvia>
                 </prediccion>
                 <prediccion>
                     <Fecha>2013-12-24</Fecha>
                     <Temperatura_maxima>27.5</Temperatura_maxima>
                     <Temperatura_minima>17.6</Temperatura_minima>
-                    <Prob_Lluvia>25.0</Prob_Lluvia>
+                    <Prob_Lluvia>25%</Prob_Lluvia>
                 </prediccion>
             </Poblacion>
         </provincias>

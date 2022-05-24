@@ -42,7 +42,7 @@
                                                                 <xs:element name="Fecha" type="xs:date"></xs:element>
                                                                 <xs:element name="Temperatura_maxima" type="xs:decimal"></xs:element>
                                                                 <xs:element name="Temperatura_minima" type="xs:decimal"></xs:element>
-                                                                <xs:element name="Prob_Lluvia" type="xs:decimal"></xs:element>
+                                                                <xs:element name="Prob_Lluvia" type="xs:string"></xs:element>
                                                                 <xs:element name="Avisos_riesgo" minOccurs="0" maxOccurs="10">
                                                                     <xs:simpleType>
                                                                         <xs:restriction base="xs:string">
