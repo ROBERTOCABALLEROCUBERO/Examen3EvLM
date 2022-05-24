@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<info_meteo  xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiempo.xsd">
+<info_meteo xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="/tiempo.xsd">
     <Comunidades_Autonomas nombre = "Madrid">
         <provincias nombre = "Madrid">
-            <Poblacion nombre = "Alcobendas">
+            <Poblacion nombre = "Alcobendas" >
                 <prediccion>
                     <fecha></fecha>
                     <Temperatura_maxima></Temperatura_maxima>
