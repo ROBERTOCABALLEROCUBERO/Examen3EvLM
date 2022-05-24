@@ -4,14 +4,23 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="Comunidades_Autonomas" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType >
+                    <xs:complexType>
                         <xs:sequence>
-                           <xs:element name="provincias" minOccurs="1" maxOccurs="unbounded">
+                            <xs:element name="nombre" id="nom_CA">
+                                <xs:unique name="nombre">
+                                    <xs:selector xpath="nombre" />
+                                    <xs:field xpath="@nom_CA" />
+                                </xs:unique>
+                            </xs:element>
+                            <xs:element name="provincias" minOccurs="1" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
+                                        <xs:element name="nombre"></xs:element>
                                         <xs:element name="Poblacion" minOccurs="1" maxOccurs="unbounded">
+
                                             <xs:complexType>
                                                 <xs:sequence>
+                                                    <xs:element name="nombre" minOccurs="1"></xs:element>
                                                     <xs:element name="prediccion" minOccurs="1" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
@@ -19,27 +28,30 @@
                                                                 <xs:element name="Temperatura_maxima" type="xs:decimal"></xs:element>
                                                                 <xs:element name="Temperatura_minima" type="xs:decimal"></xs:element>
                                                                 <xs:element name="Prob_Lluvia" type="xs:decimal"></xs:element>
-                                                                <xs:element name="Avisos_riesgo"></xs:element>
+                                                                <xs:element name="Avisos_riesgo" minOccurs="0" maxOccurs="10">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="Viento"></xs:enumeration>
+                                                                            <xs:enumeration value="Nieve"></xs:enumeration>
+                                                                            <xs:enumeration value="Tormentas"></xs:enumeration>
+                                                                            <xs:enumeration value="Huracan"></xs:enumeration>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
                                                             </xs:sequence>
-                                                           
+
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
-                                                
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="nombre" use="required" type="xs:string"></xs:attribute>
                                 </xs:complexType>
-                            </xs:element>                    
+                            </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="nombre" use="required" type="xs:string"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-           
         </xs:complexType>
     </xs:element>
-
-
 </xs:schema>

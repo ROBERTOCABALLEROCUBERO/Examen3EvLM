@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <info_meteo xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation="/tiempo.xsd">
-    <Comunidades_Autonomas nombre = "Madrid">
-        <provincias nombre = "Madrid">
-            <Poblacion nombre = "Alcobendas" >
+xsi:schemaLocation="https://www.w3schools.com tiempo.xsd">
+    <Comunidades_Autonomas>
+        <nombre>Madrid</nombre>
+        <provincias>
+            <nombre>Madrid</nombre>
+            <Poblacion>
+            <nombre>Alcobendas</nombre>
                 <prediccion>
-                    <fecha></fecha>
-                    <Temperatura_maxima></Temperatura_maxima>
-                    <Temperatura_minima></Temperatura_minima>
-                    <Prob_Lluvia></Prob_Lluvia>
-                    <Avisos_riesgo></Avisos_riesgo>
+                    <Fecha>2013-12-23</Fecha>
+                    <Temperatura_maxima>25.5</Temperatura_maxima>
+                    <Temperatura_minima>13.6</Temperatura_minima>
+                    <Prob_Lluvia>26.0</Prob_Lluvia>
+                </prediccion>
+                <prediccion>
+                    <Fecha>2013-12-24</Fecha>
+                    <Temperatura_maxima>27.5</Temperatura_maxima>
+                    <Temperatura_minima>17.6</Temperatura_minima>
+                    <Prob_Lluvia>25.0</Prob_Lluvia>
                 </prediccion>
             </Poblacion>
         </provincias>
 
     </Comunidades_Autonomas>
-
 
 </info_meteo>
