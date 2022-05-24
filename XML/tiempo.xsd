@@ -3,24 +3,39 @@
     <xs:element name="info_meteo">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Comunidades_Autonomas" minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="Comunidades_Autonomas" minOccurs="1" maxOccurs="17">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombre" id="nom_CA">
-                                <xs:unique name="nombre">
-                                    <xs:selector xpath="nombre" />
-                                    <xs:field xpath="@nom_CA" />
-                                </xs:unique>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Za-z]+" />
+                                    </xs:restriction>
+                                </xs:simpleType>
                             </xs:element>
                             <xs:element name="provincias" minOccurs="1" maxOccurs="unbounded">
                                 <xs:complexType>
+
                                     <xs:sequence>
-                                        <xs:element name="nombre"></xs:element>
+
+                                        <xs:element name="nombre">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Za-z]+" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
                                         <xs:element name="Poblacion" minOccurs="1" maxOccurs="unbounded">
 
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="nombre" minOccurs="1"></xs:element>
+                                                    <xs:element name="nombre" minOccurs="1">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[A-Za-z]+" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
                                                     <xs:element name="prediccion" minOccurs="1" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
@@ -39,6 +54,7 @@
                                                                     </xs:simpleType>
                                                                 </xs:element>
                                                             </xs:sequence>
+
 
                                                         </xs:complexType>
                                                     </xs:element>

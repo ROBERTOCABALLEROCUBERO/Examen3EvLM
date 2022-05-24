@@ -5,6 +5,7 @@ xsi:schemaLocation="https://www.w3schools.com tiempo.xsd">
         <nombre>Madrid</nombre>
         <provincias>
             <nombre>Madrid</nombre>
+            
             <Poblacion>
             <nombre>Alcobendas</nombre>
                 <prediccion>
