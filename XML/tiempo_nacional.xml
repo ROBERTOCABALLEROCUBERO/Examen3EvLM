@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<info_meteo>
+<info_meteo  xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiempo.xsd">
+    <Comunidades_Autonomas nombre = "Madrid">
+        <provincias nombre = "Madrid">
+            <Poblacion nombre = "Alcobendas">
+                <prediccion>
+                    <fecha></fecha>
+                    <Temperatura_maxima></Temperatura_maxima>
+                    <Temperatura_minima></Temperatura_minima>
+                    <Prob_Lluvia></Prob_Lluvia>
+                    <Avisos_riesgo></Avisos_riesgo>
+                </prediccion>
+            </Poblacion>
+        </provincias>
+
+    </Comunidades_Autonomas>
 
 
-
-    
 </info_meteo>
